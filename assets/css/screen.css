@@ -1034,3 +1034,15 @@ hr {
 .gh-feed.gh-inner {
   --container-width: 1440px;
 }
+
+.gh-article-header {
+  position: relative;
+  max-height: 69dvh;
+  overflow: hidden;
+  & > .gh-article-title {
+    padding-inline: 2rem;
+  }
+  & > .gh-article-excerpt {
+    padding-inline: 2rem;
+  }
+}
