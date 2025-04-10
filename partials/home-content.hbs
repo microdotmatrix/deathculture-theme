@@ -1,7 +1,5 @@
-<section style="margin-top: -40px;">
-  {{#get "pages" filter="featured:true" limit="1"}}
-    {{#foreach pages}}
-      {{content}}
-    {{/foreach}}
-  {{/get}}
-</section>
+{{#get "pages" filter="featured:true" limit="1"}}
+  {{#foreach pages}}
+    {{content}}
+  {{/foreach}}
+{{/get}}
