@@ -1045,17 +1045,18 @@ hr {
     padding-inline: var(--content-gutter, 2rem);
   }
 }
-
-.gh-article-header {
-  position: relative;
-  min-height: 540px;
-  max-height: 840px;
-  overflow: hidden;
-  & > .gh-article-title {
-    padding-inline: var(--content-gutter, 2rem);
-  }
-  & > .gh-article-excerpt {
-    padding-inline: var(--content-gutter, 2rem);
+.gh-article:where(.post, .page):not(.no-image) {
+  & > .gh-article-header {
+    position: relative;
+    min-height: 540px;
+    max-height: 840px;
+    overflow: hidden;
+    & > .gh-article-title {
+      padding-inline: var(--content-gutter, 2rem);
+    }
+    & > .gh-article-excerpt {
+      padding-inline: var(--content-gutter, 2rem);
+    }
   }
 }
 
