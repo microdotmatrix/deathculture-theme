@@ -1050,6 +1050,11 @@ body:not(.post-template, .page-template) .gh-outer {
   }
 }
 
+.gh-article:where(.page):not(.post) .gh-content > p,
+.gh-article:where(.post, .page) .gh-article-title {
+  padding-inline: var(--content-gutter, 2rem);
+}
+
 .gh-article:where(.post, .page):not(.no-image) > .gh-article-header {
   --heading-gutter: 4vw;
   position: relative;
