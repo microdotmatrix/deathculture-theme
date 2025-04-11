@@ -1055,11 +1055,31 @@ body:where(.home-template) .gh-outer {
     min-height: 540px;
     max-height: 840px;
     overflow: hidden;
+    place-content: center;
     & > .gh-article-title {
       padding-inline: var(--content-gutter, 2rem);
     }
     & > .gh-article-excerpt {
       padding-inline: var(--content-gutter, 2rem);
+    }
+    & > .gh-article-image {
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: -1;
+      width: 66%;
+      &::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        background-image: linear-gradient(
+          90deg,
+          var(--background-color) 0%,
+          transparent 50%
+        );
+      }
     }
   }
 }
