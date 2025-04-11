@@ -1065,6 +1065,7 @@ body:where(.home-template) .gh-outer {
       padding-inline: var(--content-gutter, 2rem);
     }
     & > .gh-article-image {
+      --overlay-gradient-direction: 0deg;
       position: absolute;
       top: 0;
       right: 0;
@@ -1080,10 +1081,13 @@ body:where(.home-template) .gh-outer {
         width: 100%;
         height: 100%;
         background-image: linear-gradient(
-          90deg,
+          var(--overlay-gradient-direction),
           var(--background-color) 0%,
           hsl(0, 9%, 96% / 0.25) 50%
         );
+        @media (min-width: 960px) {
+          --overlay-gradient-direction: 90deg;
+        }
       }
     }
   }
