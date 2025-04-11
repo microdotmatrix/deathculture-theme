@@ -1146,3 +1146,7 @@ body:where(.page-template) .gh-article-title {
   font-size: clamp(3.49rem, 18.16vi + -2.05rem, 10.48rem);
   line-height: 1.1;
 }
+
+body:where(.post-template) .gh-main {
+  padding-top: 3rem;
+}
