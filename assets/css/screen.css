@@ -1121,7 +1121,7 @@ body:where(.page-template)
 
 .kg-header-card:where(.kg-width-full, .kg-content-wide)
   .kg-header-card-content
-  .kg-header-card-text:where(.kg-align-center) {
+  .kg-header-card-text.kg-align-center {
   max-width: 96ch;
   margin-inline: auto;
   text-wrap: balance;
