@@ -1083,7 +1083,7 @@ body:where(.home-template) .gh-outer {
         background-image: linear-gradient(
           var(--overlay-gradient-direction),
           var(--background-color) 0%,
-          hsl(0, 9%, 96% / 0.25) 50%
+          hsl(0 9% 96% / 0.25) 50%
         );
         @media (min-width: 960px) {
           --overlay-gradient-direction: 90deg;
