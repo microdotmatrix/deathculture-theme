@@ -1055,7 +1055,7 @@ body:not(.post-template, .page-template) .gh-outer {
   padding-inline: var(--content-gutter, 2rem);
 }
 
-.gh-article:where(.post, .page):not(.no-image) & > .gh-article-header {
+.gh-article:where(.post, .page):not(.no-image) > .gh-article-header {
   --heading-gutter: 4vw;
   position: relative;
   height: fit-content;
