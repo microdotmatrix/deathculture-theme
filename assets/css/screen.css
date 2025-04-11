@@ -1096,6 +1096,8 @@ body:where(.page-template)
       );
       @media (min-width: 992px) {
         --overlay-gradient-direction: 90deg;
+      }
+      @media (min-width: 1200px) {
         --overlay-gradient-stop: 50%;
       }
     }
