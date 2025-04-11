@@ -1038,7 +1038,9 @@ hr {
   --container-width: 1440px;
 }
 
-.gh-article:where(.post) {
+.gh-article:where(.post):not(.page) {
+  --content-gutter: 4rem;
+  & > .gh-content,
   & > .gh-article-footer {
     padding-inline: var(--content-gutter, 2rem);
   }
