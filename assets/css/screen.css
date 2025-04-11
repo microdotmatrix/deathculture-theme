@@ -1049,6 +1049,11 @@ body:where(.home-template) .gh-outer {
     padding-inline: var(--content-gutter, 2rem);
   }
 }
+
+.gh-article:where(.post, .page) .gh-content > p {
+  padding-inline: var(--content-gutter, 2rem);
+}
+
 .gh-article:where(.post, .page):not(.no-image) {
   --heading-gutter: 4vw;
   & > .gh-article-header {
