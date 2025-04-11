@@ -1025,7 +1025,7 @@ hr {
   padding-right: 0;
 }
 
-body:where(.home-template) .gh-outer {
+body:not(.post-template) .gh-outer {
   padding-inline: var(--gap);
 }
 
