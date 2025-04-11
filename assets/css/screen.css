@@ -1077,7 +1077,7 @@ body:where(.page-template)
     z-index: -1;
     width: 100%;
     @media (min-width: 992px) {
-      width: 66%;
+      width: 50%;
       top: 0;
     }
     &::before {
@@ -1099,8 +1099,8 @@ body:where(.page-template)
   }
   @media (min-width: 992px) {
     height: 100%;
-    min-height: 540px;
-    max-height: 1024px;
+    min-height: 640px;
+    max-height: 900px;
     overflow: hidden;
     place-content: center;
   }
