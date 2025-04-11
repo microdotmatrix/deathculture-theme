@@ -1050,8 +1050,7 @@ body:not(.post-template, .page-template) .gh-outer {
   }
 }
 
-.gh-article:where(.page):not(.post) .gh-content > p,
-.gh-article:where(.post, .page) .gh-article-title {
+body:where(.page-template) .gh-article:where(.post, .page) > p {
   padding-inline: var(--content-gutter, 2rem);
 }
 
