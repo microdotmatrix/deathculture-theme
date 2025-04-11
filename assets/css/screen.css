@@ -1059,7 +1059,7 @@ body:not(.post-template, .page-template) .gh-outer {
   --heading-gutter: 4vw;
   position: relative;
   height: fit-content;
-  @media screen and (min-width >= 960px) {
+  @media (min-width: 992px) {
     height: 100%;
     min-height: 540px;
     max-height: 1024px;
@@ -1080,7 +1080,7 @@ body:not(.post-template, .page-template) .gh-outer {
     right: 0;
     z-index: -1;
     width: 100%;
-    @media screen and (min-width >= 960px) {
+    @media (min-width: 992px) {
       width: 66%;
       top: 0;
     }
@@ -1095,7 +1095,7 @@ body:not(.post-template, .page-template) .gh-outer {
         var(--background-color) 0%,
         hsl(0 9% 96% / 0.25) var(--overlay-gradient-stop)
       );
-      @media screen and (min-width >= 960px) {
+      @media (min-width: 992px) {
         --overlay-gradient-direction: 90deg;
         --overlay-gradient-stop: 50%;
       }
