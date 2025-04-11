@@ -1050,6 +1050,7 @@ body:where(.home-template) .gh-outer {
   }
 }
 .gh-article:where(.post, .page):not(.no-image) {
+  --heading-gutter: 4vw;
   & > .gh-article-header {
     position: relative;
     height: fit-content;
@@ -1061,10 +1062,10 @@ body:where(.home-template) .gh-outer {
       place-content: center;
     }
     & > .gh-article-title {
-      padding-inline: var(--content-gutter, 2rem);
+      padding-inline: var(--heading-gutter);
     }
     & > .gh-article-excerpt {
-      padding-inline: var(--content-gutter, 2rem);
+      padding-inline: calc(var(--heading-gutter) + 2rem);
     }
     & > .gh-article-image {
       --overlay-gradient-direction: 0deg;
@@ -1122,6 +1123,6 @@ body:where(.page-team, .page-about)
 }
 
 body:where(.page-template) .gh-article-title {
-  font-size: clamp(2.49rem, 18.16vi + -2.05rem, 12.48rem);
+  font-size: clamp(3.49rem, 18.16vi + -2.05rem, 10.48rem);
   line-height: 1.1;
 }
