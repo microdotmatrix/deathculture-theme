@@ -1118,3 +1118,8 @@ body:where(.page-team, .page-about)
     grid-row: 1;
   }
 }
+
+body:where(.page-template) .gh-article-title {
+  font-size: clamp(2.49rem, 18.16vi + -2.05rem, 12.48rem);
+  line-height: 1.1;
+}
