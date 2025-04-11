@@ -1107,8 +1107,8 @@ body:where(.page-team)
   .kg-header-card:where(.kg-swapped)
   .kg-header-card-content
   .kg-header-card-text {
-  grid-row: 1;
+  grid-row: 2;
   @media (min-width: 960px) {
-    grid-row: 2;
+    grid-row: 1;
   }
 }
