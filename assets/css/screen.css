@@ -1025,14 +1025,25 @@ hr {
   padding-right: 0;
 }
 
+.gh-outer:where(.gh-head, .gh-foot) {
+  padding-inline: var(--content-gutter, 2rem);
+}
+
 .gh-main .gh-inner {
   --container-width: 100%;
 }
 
-.gh-head .gh-inner,
-.gh-foot .gh-inner,
-.gh-feed.gh-inner {
+:where(.gh-head, .gh-foot) .gh-inner,
+.gh-feed:where(.gh-inner) {
   --container-width: 1440px;
+}
+
+.gh-article:where(.post) {
+  --content-gutter: 4rem;
+  & > .gh-content,
+  & > .gh-article-footer {
+    padding-inline: var(--content-gutter, 2rem);
+  }
 }
 
 .gh-article-header {
@@ -1040,9 +1051,13 @@ hr {
   max-height: 69dvh;
   overflow: hidden;
   & > .gh-article-title {
-    padding-inline: 2rem;
+    padding-inline: var(--content-gutter, 2rem);
   }
   & > .gh-article-excerpt {
-    padding-inline: 2rem;
+    padding-inline: var(--content-gutter, 2rem);
   }
+}
+
+body:where(.is-head-open) {
+  overflow: hidden;
 }
