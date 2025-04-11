@@ -836,6 +836,7 @@ hr {
 
   .gh-content {
     font-size: var(--content-font-size);
+    margin-top: 9em;
   }
 }
 
@@ -1053,7 +1054,7 @@ body:not(.post-template, .page-template) .gh-outer {
 body:where(.page-template)
   .gh-article:where(.post, .page)
   .gh-content
-  > :not(.kg-header-card) {
+  > :not(.kg-header-card.kg-width-full) {
   padding-inline: var(--content-gutter, 2rem);
 }
 
