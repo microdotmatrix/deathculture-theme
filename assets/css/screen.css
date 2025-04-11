@@ -1103,8 +1103,7 @@ body:where(.page-team, .page-about)
   max-width: none;
 }
 
-.gh-home-content
-  .kg-header-card:where(.kg-swapped)
+.kg-header-card:where(.kg-swapped)
   .kg-header-card-content
   .kg-header-card-text {
   grid-row: 2;
