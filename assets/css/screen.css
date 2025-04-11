@@ -1063,3 +1063,13 @@ hr {
 body:where(.is-head-open) {
   overflow: hidden;
 }
+
+body:where(.page-team)
+  .kg-header-card:where(.kg-width-full, .kg-layout-split)
+  .kg-header-card-text
+  > .kg-header-card-subheading {
+  font-size: clamp(0.68em, 2vw, 0.86em);
+  font-weight: 300;
+  line-height: 1.3em;
+  max-width: none;
+}
