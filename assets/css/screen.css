@@ -1048,7 +1048,8 @@ hr {
 
 .gh-article-header {
   position: relative;
-  max-height: 69dvh;
+  min-height: 540px;
+  max-height: 840px;
   overflow: hidden;
   & > .gh-article-title {
     padding-inline: var(--content-gutter, 2rem);
