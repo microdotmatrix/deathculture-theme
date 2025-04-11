@@ -1108,7 +1108,7 @@ body:where(.page-team)
   .kg-header-card-content
   .kg-header-card-text {
   grid-row: 2;
-  @media (min-width: 960px) {
+  @media (min-width: 640px) {
     grid-row: 1;
   }
 }
