@@ -1149,4 +1149,7 @@ body:where(.page-template) .gh-article-title {
 
 body:where(.post-template) .gh-main {
   padding-top: 3rem;
+  .gh-content {
+    margin-top: 4em;
+  }
 }
