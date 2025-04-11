@@ -1040,7 +1040,6 @@ hr {
 
 .gh-article:where(.post) {
   --content-gutter: 4rem;
-  & > .gh-content,
   & > .gh-article-footer {
     padding-inline: var(--content-gutter, 2rem);
   }
