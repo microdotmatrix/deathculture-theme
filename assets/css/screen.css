@@ -1054,7 +1054,7 @@ body:where(.home-template) .gh-outer {
     position: relative;
     @media (min-width: 960px) {
       min-height: 540px;
-      max-height: 840px;
+      max-height: 1024px;
       overflow: hidden;
       place-content: center;
     }
