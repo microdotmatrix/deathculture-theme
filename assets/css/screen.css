@@ -1066,6 +1066,7 @@ body:where(.home-template) .gh-outer {
     }
     & > .gh-article-image {
       --overlay-gradient-direction: 0deg;
+      --overlay-gradient-stop: 100%;
       position: absolute;
       top: -4.2em;
       right: 0;
@@ -1084,7 +1085,7 @@ body:where(.home-template) .gh-outer {
         background-image: linear-gradient(
           var(--overlay-gradient-direction),
           var(--background-color) 0%,
-          hsl(0 9% 96% / 0.25) var(--overlay-gradient-stop, 100%)
+          hsl(0 9% 96% / 0.25) var(--overlay-gradient-stop)
         );
         @media (min-width: 960px) {
           --overlay-gradient-direction: 90deg;
