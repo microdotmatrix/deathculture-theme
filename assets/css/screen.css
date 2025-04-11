@@ -1093,11 +1093,11 @@ body:where(.is-head-open) {
   overflow: hidden;
 }
 
-body:where(.page-team)
+body:where(.page-team, .page-about)
   .kg-header-card:where(.kg-width-full, .kg-layout-split)
   .kg-header-card-text
   > .kg-header-card-subheading {
-  font-size: clamp(0.68em, 2vw, 0.86em) !important;
+  font-size: clamp(0.75em, 2vw, 0.9em) !important;
   font-weight: 300;
   line-height: 1.3em;
   max-width: none;
