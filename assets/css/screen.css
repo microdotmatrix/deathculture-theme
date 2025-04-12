@@ -480,6 +480,15 @@ hr {
   font-size: clamp(3.2rem, 2.4rem + 2.5vw, 6.4rem);
 }
 
+.has-classic-feed .gh-card-excerpt {
+  font-size: clamp(1.3rem, 0.27vw + 1.67rem, 1.8rem);
+  line-height: 1.7;
+  letter-spacing: -0.005em;
+  font-weight: 300;
+  color: var(--color-secondary-text);
+  margin-top: 1.5rem;
+}
+
 @media (max-width: 991px) {
   .has-classic-feed .gh-card-link {
     flex-direction: column;
@@ -626,6 +635,7 @@ hr {
   top: 48px;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .gh-article-meta .gh-author-image-list {
@@ -697,6 +707,11 @@ hr {
   letter-spacing: -0.01em;
   border: 2px solid var(--color-border);
   border-radius: 24px;
+  transition: color 200ms ease, border-color 400ms ease;
+  &:hover,
+  &:focus {
+    color: var(--ghost-accent-color) !important;
+  }
 }
 
 .gh-content .gh-article-header {
