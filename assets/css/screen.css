@@ -696,6 +696,7 @@ hr {
 }
 
 .gh-article-tag {
+  position: relative;
   display: inline-block;
   width: fit-content;
   padding: 2px 12px;
@@ -711,6 +712,16 @@ hr {
   &:hover,
   &:focus {
     color: var(--ghost-accent-color) !important;
+  }
+  &::before {
+    content: "#";
+    position: absolute;
+    top: -12px;
+    left: -26px;
+    color: var(--color-border);
+    opacity: 0.5;
+    font-size: 2.5rem;
+    font-weight: 700;
   }
 }
 
