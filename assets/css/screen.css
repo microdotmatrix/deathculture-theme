@@ -836,7 +836,6 @@ hr {
 
   .gh-content {
     font-size: var(--content-font-size);
-    margin-top: 9em;
   }
 }
 
@@ -1064,6 +1063,7 @@ body:where(.page-template)
   height: fit-content;
   & > .gh-article-title {
     padding-inline: var(--heading-gutter);
+    padding-top: 6rem;
   }
   & > .gh-article-excerpt {
     padding-inline: calc(var(--heading-gutter) + 2rem);
@@ -1150,6 +1150,9 @@ body:where(.page-template) .gh-article-title {
 body:where(.post-template) .gh-main {
   padding-top: 3rem;
   .gh-content {
-    margin-top: 4em;
+    margin-top: 5em;
+    @media (min-width: 768px) {
+      margin-top: 6em;
+    }
   }
 }
