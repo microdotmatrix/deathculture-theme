@@ -1192,3 +1192,15 @@ body:where(.post-template) .gh-main {
     height: 72px;
   }
 }
+
+@media (min-width: 992px) {
+  body:where(.is-head-stacked) .gh-head-menu {
+    height: 48px;
+    &::before {
+      top: 85px;
+    }
+    &::after {
+      top: 130px;
+    }
+  }
+}
