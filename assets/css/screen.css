@@ -1177,8 +1177,10 @@ body:where(.page-template) .gh-article-title {
   line-height: 1.1;
 }
 
-body:where(.page-template) .gh-content {
-  margin-top: 0em;
+@media (min-width: 992px) {
+  body:where(.page-template) .gh-content {
+    margin-top: 0em;
+  }
 }
 
 body:where(.post-template) .gh-main {
