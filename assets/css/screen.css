@@ -1186,3 +1186,9 @@ body:where(.post-template) .gh-main {
     }
   }
 }
+
+@media (max-width: 767px) {
+  #gh-head {
+    height: 72px;
+  }
+}
