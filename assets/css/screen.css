@@ -1056,7 +1056,11 @@ body:not(.post-template, .page-template) .gh-outer {
 }
 
 .gh-outer:where(.gh-head, .gh-foot) {
-  padding-inline: var(--content-gutter, 2rem);
+  padding-inline: var(--content-gutter, 0.5rem);
+}
+
+body:where(.is-head-stacked) .gh-head {
+  padding-block: 0.5rem;
 }
 
 .gh-main .gh-inner {
@@ -1171,6 +1175,10 @@ body:where(.page-template)
 body:where(.page-template) .gh-article-title {
   font-size: clamp(3.49rem, 18.16vi + -2.05rem, 10.48rem);
   line-height: 1.1;
+}
+
+body:where(.page-template) .gh-content {
+  margin-top: 0em;
 }
 
 body:where(.post-template) .gh-main {
